@@ -1,14 +1,4 @@
-<div class="registration-body">
-  <div class="container" id=" home-container">
-      <div class="title">
-          <h1>NEW USER<br><span class="registration" id="registration-2">REGISTRATION</span></h1>
-      </div>
-      <div class="menu">
-          <ul>
-              <li><a href="./index.html">Home</a></li>
-              <li><a href="./list_of_users_page.html">Users</a></li>
-          </ul>
-      </div>
+<div class="container" id=" home-container" style="clear: both;">
       <div class="first-sphere">
 
       </div>
@@ -25,29 +15,19 @@
 
       </div>
       <div class='registration-box'>
-          <h2 class="title-registration-box">INSERT YOUR DATA:</h2>
+          <h2 class="title-registration-box" style="color: white; text-shadow: 0px 0px 6px rgba(9,9,121,0.8);">INSERT YOUR DATA:</h2>
           <div class="input-container">
-              <div class="left-box-registration">
-                  <span>User name*:</span>
-                  <input id="user-name-input" type="text" placeholder="Insert user name">
-
-                  <span>Password*:</span>
-                  <input id="password-input" type="password" placeholder="Insert password (min.8 char)"><br>
-              </div>
+            <div class="login-box">
+              <span>User name*:</span>
+              <input id="user-name-input" type="text" placeholder="Insert user name">
+            </div>
+            <div class="login-box">
+              <span>Password*:</span>
+              <input id="password-input" type="password" placeholder="Insert password (min.8 char)">
+            </div>
           </div>
           <button id="save-btn" onclick="createUser()">SAVE</button>
           <div id="error-display"></div>
           <span><small>*Required field</small></span>
       </div>
-      <div class="contacts" id="registration-contacts">
-          <div class="box-icon">
-              <a href=""><img src="./assets/facebook.svg" alt="Facebook"></a>
-              <a href=""><img src="./assets/instagram.svg" alt="Instagram"></a>
-              <a href=""><img src="./assets/twitter.svg" alt="Twitter"></a>
-          </div>
-          <span class="info">Contacts: xx 0123 Via xxAaa, tel. 010/55xx123x</span><br>
-          <span class="info">Copyright: dave89dc, Cherubini s.p.a.</span>
-      </div>
-  </div>
-
 </div>

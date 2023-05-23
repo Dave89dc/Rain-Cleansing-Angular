@@ -1,0 +1,332 @@
+.container {
+    width: 100%;
+    height: 650px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+    ". . G . . . . N . ."
+    "L . . . P . . . . E";
+}
+
+.first-sphere {
+    grid-area: N;
+    width: 360px;
+    height: 360px;
+    border-radius: 200px;
+    background: linear-gradient(115deg, rgba(255,255,255,1) 13%, rgba(0,212,255,0.6) 30%,  rgba(9,9,121,1) 100%);
+    box-shadow: 2px 0px 8px 0px rgba(0, 0, 0, 0.8);
+}
+
+.second-sphere {
+    grid-area: E;
+    width: 260px;
+    height: 260px;
+    border-radius: 200px;
+    background: linear-gradient(120deg, rgba(255,255,255,1) 14%, rgba(0,212,255,0.6) 30%,  rgba(9,9,121,1) 100%);
+    box-shadow: 2px 0px 8px 0px rgba(0, 0, 0, 0.8);
+    padding-top: 200px;
+}
+
+.third-sphere {
+    grid-area: P;
+    width: 260px;
+    height: 260px;
+    border-radius: 200px;
+    background: linear-gradient(145deg, rgba(255,255,255,1) 14%, rgba(0,212,255,0.6) 30%,  rgba(9,9,121,1) 100%);
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.8);
+}
+
+.fourth-sphere {
+    grid-area: G;
+    width: 290px;
+    height: 290px;
+    border-radius: 200px;
+    background: linear-gradient(165deg, rgba(255,255,255,1) 9%, rgba(0,212,255,0.6) 30%,  rgba(9,9,121,1) 100%);
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.8);
+}
+
+.fifth-sphere {
+    grid-area: L;
+    width: 170px;
+    height: 170px;
+    border-radius: 200px;
+    background: linear-gradient(172deg, rgba(255,255,255,1) 5%, rgba(0,212,255,0.6) 30%,  rgba(9,9,121,1) 100%);
+    box-shadow: 0px 1px 8px 0px rgba(0, 0, 0, 0.8);
+}
+
+.name-box, .email-box, .password-box, .gender-box, .newsletter-box {
+    margin: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+    text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.918);
+}
+
+.registration-box {
+    position: absolute;
+    width: 1050px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    border-radius: 10px;
+    background: linear-gradient(150deg, rgba(255,255,255,0.8) 4%, rgba(0,212,255,0.5) 30%,  rgba(9,9,121,0.5) 100%);
+    box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.8);
+    padding: 40px;
+    text-shadow: 0px 0px 6px rgba(9,9,121,0.8);
+    right: 10%;
+    bottom: 150px;
+}
+
+.input-container {
+    display: flex;
+}
+
+.left-box-registration, .right-box-registration {
+    width: 426px;
+    margin: auto;
+}
+
+.title-registration-box {
+    font-size: 40px;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+span {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 15px;
+    text-align: center;
+    margin: 0px;
+    margin-bottom: 6px;
+}
+
+input {
+    margin: 0px;
+    width: 220px;
+    height: 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0px 0px 6px rgba(9,9,121,0.8);
+    padding: 5px 8px 5px;
+    float: right;
+    margin-top: 6px;
+}
+
+.gender-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 220px;
+    padding-top: 4px;
+}
+
+.newsletter-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 232px;
+    padding-top: 5px;
+}
+
+.gender-span {
+    font-size: 20px;
+    padding: 0px;
+    margin: 0px;
+    padding-right: 5px;
+}
+
+.newsletter-span {
+    margin-right: 50px;
+}
+
+img {
+    width: 25px;
+    margin-left: 25px;
+}
+
+.box-icon {
+    display: flex;
+    align-items: center;
+    padding: 0px;
+}
+
+.info {
+    font-size: 16px;
+}
+
+.checkbox {
+    margin: auto;
+    cursor: pointer;
+    width: 14px;
+    height: 14px;
+    margin-right: 9px;
+}
+
+button {
+    width: 100px;
+    margin: 30px auto 20px;
+    cursor: pointer;
+    font-family: Glory, sans-serif;
+    font-size: 25px;
+    background-color: transparent;
+    color: white;
+    text-shadow: 0px 0px 6px rgba(9,9,121,0.8);
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.8);
+}
+
+button:hover {
+    background-color: rgba(255, 255, 255, 0.259);
+}
+
+button:active {
+    background-color: rgba(255, 255, 255, 0.528);
+}
+
+#box-list::-webkit-scrollbar, .registration-box::-webkit-scrollbar {
+    width: 4px;
+}
+
+#box-list::-webkit-scrollbar-track, .registration-box::-webkit-scrollbar-track {
+    /* background-color: #cccccc00;
+    box-shadow: inset 0 0 5px rgba(9,9,121,0.8);
+    border-radius: 10px;*/
+    display: none;
+}
+
+#box-list::-webkit-scrollbar-thumb, .registration-box::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.453);
+    border-radius: 10px;
+    display: none;
+}
+
+@media screen and (max-width: 1800px){
+
+  .registration-box {
+    bottom: 100px;
+}
+
+}
+
+@media screen and (max-width: 1375px){
+
+  .second-sphere {
+    display: none;
+}
+
+}
+
+@media screen and (max-width: 1190px){
+
+  .first-sphere {
+    width: 300px;
+    height: 300px;
+}
+
+.third-sphere {
+    width: 220px;
+    height: 220px;
+}
+
+.fourth-sphere {
+    width: 230px;
+    height: 230px;
+}
+
+.fifth-sphere {
+    width: 170px;
+    height: 170px;
+}
+
+.registration-box {
+  position: absolute;
+  width: 95vw;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  border-radius: 10px;
+  background: linear-gradient(150deg, rgba(255,255,255,0.8) 4%, rgba(0,212,255,0.5) 30%,  rgba(9,9,121,0.5) 100%);
+  box-shadow: 2px 2px 8px 0px rgba(0, 0, 0, 0.8);
+  padding: 40px;
+  text-shadow: 0px 0px 6px rgba(9,9,121,0.8);
+  left: 2%;
+  bottom: 100px;
+}
+
+}
+
+@media screen and (max-width: 1035px){
+
+  .input-container {
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.input-container::-webkit-scrollbar {
+  width: 4px;
+}
+
+.input-container::-webkit-scrollbar-track {
+  background-color: #cccccc00;
+  box-shadow: inset 0 0 5px rgba(9,9,121,0.8);
+  border-radius: 10px;
+}
+
+.input-container::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.697);
+  border-radius: 10px;
+}
+
+}
+
+@media screen and (max-width: 960px){
+
+  .first-sphere {
+    display: none;
+}
+
+}
+
+@media screen and (max-width: 660px){
+
+  .third-sphere {
+    display: none;
+}
+
+}
+
+@media screen and (max-width: 550px){
+
+
+  .left-box-registration, .middle-box, .right-box-registration{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input-container{
+    width: 100%;
+  }
+
+  input{
+    width: 80%;
+  }
+
+}
+
+@media screen and (max-width: 440px){
+
+  .fourth-sphere {
+    position: absolute;
+    left: 20px;
+}
+
+}
